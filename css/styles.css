@@ -6,7 +6,7 @@
     margin: 0;
     font-family: 'Gilroy';
     background-color: #161719;
-    background-image: url('/img/bg.jpg');
+    background-image: url('./img/bg.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #fff
