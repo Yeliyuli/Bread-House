@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles_contacts.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,600;7..72,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bread House</title>
+  </head>
+
+  <body>
+    <header class="header lock-padding">
+      <nav class="nav">
+        <div class="container-wide">
+          <div class="row space-between align-center">
+            <a href="./index.html" class="logo">BH</a>
+            <div class="nav-menu">
+              <ul>
+                <li><a href="./index.html">На главную</a></li>
+                <li><a href="./contacts.html">Наши контакты</a></li>
+              </ul>
+            </div>
+            <a href="#popup" class="account popup-link">Аккаунт</a>
+            <button class="nav-button">
+              <span class="nav-button-icon"></span>
+            </button>
+
+            <div class="mobile-nav">
+              <div class="nav-menu">
+                <ul>
+                  <li><a href="./index.html">На главную</a></li>
+                  <li><a href="./contacts.html">Наши контакты</a></li>
+                </ul>
+              </div>
+              <a href="#popup" class="account popup-link">Аккаунт</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="swipeSlider">
+      <div
+        class="slide active"
+        style="background-image: url('./img/menu/swipe_1.jpg')"
+      >
+        <h3>
+          Всегда свежие круассаны <br />
+          79руб./шт.
+        </h3>
+      </div>
+
+      <div class="slide" style="background-image: url('/img/menu/swipe_2.jpg')">
+        <h3>
+          Домашняя выпечка <br />
+          от 49руб.
+        </h3>
+      </div>
+
+      <div class="slide" style="background-image: url('/img/menu/swipe_3.jpg')">
+        <h3>
+          Эклеры <br />
+          от 69руб.
+        </h3>
+      </div>
+
+      <div class="slide" style="background-image: url('/img/menu/swipe_4.jpg')">
+        <h3>
+          Сендвичи <br />
+          от 185руб.
+        </h3>
+      </div>
+
+      <div class="slide" style="background-image: url('/img/menu/swipe_5.jpg')">
+        <h3>Хлеб в ассортименте</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('/img/menu/swipe_6.jpg')">
+        <h3>Кофе от 115руб.</h3>
+      </div>
+
+      <div class="slide" style="background-image: url('/img/menu/swipe_7.jpg')">
+        <h3>Десерты</h3>
+      </div>
+    </div>
+
+    <!-- Модальное окно аккаунта --------- -->
+    <div id="popup" class="popup">
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="form">
+            <div class="popup_title">
+              Войдите или зарегистрируйтесь, чтобы получать персональные
+              предложения
+            </div>
+            <img src="./img/icons/close.svg" alt="close" class="popup_close" />
+            <form id="login-form " class="login-form">
+              <input type="text" placeholder="Телефон +7 (  ) ___ __ __ " />
+              <button>Получить код</button>
+              <p class="message">
+                Возникли проблемы? <a href="#">Свяжитесь с нами</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <div class="footer-copyright-logo">
+              <div class="logo">BREAD HOUSE</div>
+            </div>
+            <p class="footer-copyright-text">Твоя любимая пекарня в городе</p>
+            <p class="footer-copyright-copyright">Copyright 2022 Yeliyuli</p>
+          </div>
+
+          <div class="footer-nav-wrapper">
+            <div class="footer-nav">
+              <h4 class="footer-nav-title">Посетителям</h4>
+              <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="./Contacts.html">Контакты</a></li>
+                <li><a href="#">Оставить отзыв</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav">
+              <h4 class="footer-nav-title">Другое</h4>
+              <ul>
+                <li><a href="#">Наша команда</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Стать партнером</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

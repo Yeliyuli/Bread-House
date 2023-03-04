@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,600;7..72,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bread House</title>
+  </head>
+
+  <body>
+    <header class="header lock-padding">
+      <nav class="nav">
+        <div class="container-wide">
+          <div class="row space-between align-center">
+            <a href="./index.html" class="logo">BH</a>
+            <div class="nav-menu">
+              <ul>
+                <li><a href="./menu.html">Галерея блюд</a></li>
+                <li><a href="#map">Где мы находимся</a></li>
+                <li><a href="./contacts.html">Наши контакты</a></li>
+              </ul>
+            </div>
+            <a href="#popup" class="account popup-link">Аккаунт</a>
+            <button class="nav-button">
+              <span class="nav-button-icon"></span>
+            </button>
+
+            <div class="mobile-nav">
+              <div class="nav-menu">
+                <ul>
+                  <li><a href="./menu.html">Галерея блюд</a></li>
+                  <li><a href="#map">Где мы находимся</a></li>
+                  <li><a href="./contacts.html">Наши контакты</a></li>
+                </ul>
+              </div>
+              <a href="#popup" class="account popup-link">Аккаунт</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <a href="#" class="hero">
+        <div class="hero-category">BREAD HOUSE</div>
+        <h1 class="hero-title _anim-items _anim_no-hide">
+          Твоя любимая пекарня в городе
+        </h1>
+        <p class="hero-scroll _anim-items _anim_no-hide">Узнать о нас больше</p>
+      </a>
+    </header>
+
+       <main class="container">
+      <article id="01" class="article" data-scroll="left">
+        <div class="article-text" data-number="01">
+          <div class="article-subtitle">О нас</div>
+          <h2 class="article-title">
+            А что <br />
+            кроме хлеба?
+          </h2>
+          <p>
+            Мы всегда следим, чтобы качество нашей продукции было на высоте.
+            Выпечка из слоеного теста, пицца и вкуснейшие десерты. Убедись в
+            этом лично!
+          </p>
+          <a href="./menu.html" class="article-read-more">Смотреть меню</a>
+        </div>
+        <div class="article-img">
+          <img src="/img/01.jpg" alt="01" />
+        </div>
+      </article>
+
+      <article class="article" data-scroll="left">
+        <div class="article-text" data-number="02">
+          <div class="article-subtitle">Подарок от "Bread House"</div>
+          <h2 class="article-title">Сборник рецептов</h2>
+          <p>
+            Зарегистрируйся на нашем сайте, чтобы получать персональные акции. В
+            подарок мы пришлем сборник рецептов "Bread House" для кулинарного
+            вдохновения. В нем собраны простые домашние рецепты выпечки на любой
+            вкус!
+          </p>
+          <a href="#popup" class="article-read-more popup-link"
+            >Перейти к регистрации</a
+          >
+        </div>
+        <div class="article-img">
+          <img src="/img/02.jpg" alt="01" />
+        </div>
+      </article>
+
+      <article class="article" data-scroll="left">
+        <div class="article-text" data-number="03">
+          <div class="article-subtitle">Ждем тебя в гости</div>
+          <h2 class="article-title">Где мы находимся?</h2>
+          <p>
+            Мы находимся в старейшей и красивейшей части Петербурга. В каждой
+            пекарне WiFi и уютные места. Отличное пространство для работы или
+            долгих бесед с друзьями!
+          </p>
+          <a href="#map" class="article-read-more">Смотреть на карте</a>
+        </div>
+        <div class="article-img">
+          <img src="/img/03.jpg" alt="01" />
+        </div>
+      </article>
+    </main>
+
+    <div id="map" class="map">
+      <h1 class="map-text">Адреса магазинов</h1>
+      <p class="adress">
+        г. Санкт-Петербург, ул.Большой проспект Петроградской стороны, 98, 1
+        этаж
+      </p>
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9534d1ca4be9711004a96b2c3d6917bd70d8789f816b3acc996a303772760000&amp;width=100%25&amp;height=378&amp;lang=ru_RU&amp;scroll=false"
+      ></script>
+    </div>
+
+    <!-- Модальное окно аккаунта --------- -->
+    <div id="popup" class="popup">
+      <div class="popup_body">
+        <div class="popup_content">
+          <div class="form">
+            <div class="popup_title">
+              Войдите или зарегистрируйтесь, чтобы получать персональные
+              предложения
+            </div>
+            <img src="./img/icons/close.svg" alt="close" class="popup_close" />
+            <form id="login-form " class="login-form">
+              <input type="text" placeholder="Телефон +7 (  ) ___ __ __ " />
+              <button>Получить код</button>
+              <p class="message">
+                Возникли проблемы? <a href="#">Свяжитесь с нами</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------- -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <div class="footer-copyright-logo">
+              <div class="logo">BREAD HOUSE</div>
+            </div>
+            <p class="footer-copyright-text">Твоя любимая пекарня в городе</p>
+            <p class="footer-copyright-copyright">Copyright 2022 Yeliyuli</p>
+          </div>
+
+          <div class="footer-nav-wrapper">
+            <div class="footer-nav">
+              <h4 class="footer-nav-title">Посетителям</h4>
+              <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="#popup">Оставить отзыв</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav">
+              <h4 class="footer-nav-title">Другое</h4>
+              <ul>
+                <li><a href="#">Наша команда</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Стать партнером</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
