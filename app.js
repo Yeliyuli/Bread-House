@@ -39,9 +39,9 @@ if (animItems.length > 0) {
 }
 
 // Прокрутка страницы
-document.querySelector('.hero').addEventListener('click', function() {
-  window.scrollTo({top:1000, left:0, behavior: "smooth"})
-})
+//document.querySelector('.hero').addEventListener('click', function() {
+//  window.scrollTo({top:1000, left:0, behavior: "smooth"})
+//})
 
 
 // Выезд статей на экран
