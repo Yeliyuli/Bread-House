@@ -1,0 +1,155 @@
+
+
+@media (max-width: 1700px) {
+    .header {
+        padding-bottom: 250px;
+
+    }
+}
+
+@media (max-width: 1250px) {
+    /* .header {
+        padding-bottom: 250px;
+
+    } */
+
+    .hero-title {
+        font-size: 68px;
+    }
+
+    .article-text::before{
+        /* padding-top: 150px; */
+        width: 140px;
+        height: 140px;
+        font-size: 140px;
+
+    }
+
+    .article-text{
+        padding-left: 50px;
+        max-width: 50%;
+        margin-right: 0;
+        
+    }
+
+    .article-img {
+        width: 45%;
+    }
+
+    .contacts {
+        font-size: 15px;
+        max-width: 50%;
+        
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer-nav + .footer-nav {
+        margin-left: 100px;
+    }
+    .header {
+        padding-bottom: 100px;
+    }
+
+    .nav-menu, .account {
+        display: none;
+    }
+
+    .nav-wrapper {
+        margin-bottom: 90px;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .mobile-nav-active {
+         display: flex; 
+    }
+
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .hero-category::before {
+        width: 30px;
+    }
+
+    .hero-category {
+       font-size: 16px;
+       padding-left: 62px;
+    }    
+
+    .article-title {
+        font-size: 30px;
+
+    }
+
+    .footer-row {
+        flex-direction: column-reverse;
+    }
+
+    .footer-nav-wrapper {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 950px) {
+    
+    .article,
+    .article:nth-child(even) {
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+        /* align-items: flex-start; */
+    }
+
+    .article-text{
+        max-width: 100%;
+
+    }
+
+    .article-img{
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 75px;
+
+    }
+
+
+}
+
+@media (max-width: 720px) {
+
+    .article,
+    .article:nth-child(even) {
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+        /* align-items: flex-start; */
+    }
+
+    .article-text{
+        max-width: 100%;
+
+    }
+
+    .article-img{
+        max-width: 260px;
+        width: 100%;
+        margin-bottom: 75px;
+
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-nav-wrapper {
+        flex-direction: column;
+    }
+    .footer-nav + .footer-nav {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .slide h3 {
+        font-size: 20px;
+    }
+}
