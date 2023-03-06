@@ -39,7 +39,7 @@ if (animItems.length > 0) {
 }
 
 // Прокрутка страницы
-const smoothELement = document.querySelector('.hero');
+let smoothELement = document.querySelector('.hero');
 if (smoothELement) {
 smoothELement.addEventListener('click', function() {
 window.scrollTo({top:1000, left:0, behavior: "smooth"})
